@@ -1,26 +1,16 @@
 from shiny import App, ui, render
-from shinywidgets import render_widget, output_widget, render_plotly
 import plotly.express as px
 import plotly.graph_objects as go
 import numpy as np
 import pandas as pd
 
-from netCDF4 import Dataset
-import xarray as xr
-import netCDF4 as nc
-import matplotlib.pyplot as plt
-import scipy.io
-import h5py
 import plotly.figure_factory as ff
-import geopandas as gpd
-from shapely.geometry import LineString
 import random
 
 
-# 从 CSV 文件中读取数据
 data = pd.read_csv('saying_data.csv')
 
-# 定义页面布局
+
 page1 = ui.page_fluid(  
     ui.layout_sidebar(
         ui.panel_sidebar(
@@ -35,8 +25,7 @@ page1 = ui.page_fluid(
     ),
 )  
 
-# 服务器函数
-# 服务器函数
+
 def server(input, output, session):
     @render.text 
     def random_sentence1():
@@ -73,7 +62,7 @@ def server(input, output, session):
         saying_ans=""
 
         for i in range(saying_num1):
-            saying_type = selected_sayings[i]  # 默认情况下，假设选中的内容是一个字符串
+            saying_type = selected_sayings[i] 
 
             if type_1 != "var6":
                 type_key = type_dict.get(type_1)
@@ -85,16 +74,12 @@ def server(input, output, session):
             
             saying_ans=saying_ans+str(i+1)+". "+saying_type+"\n"+"\n"
 
-        return str(saying_ans)  # 将结果转换为字符串
+        return str(saying_ans)  
 
 
-
-
-# 定义应用程序 UI
 app_ui = ui.page_navbar(
     ui.nav_panel("Page 1", page1),
     title="Page title"
 )
 
-# 创建应用程序
 app = App(app_ui, server)
