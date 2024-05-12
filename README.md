@@ -5,3 +5,5 @@
 2.  
 3. Start the shiny app. `shiny run --reload --launch-browser app.py`
 4. 
+
+![image]([picture or gif url](https://github.com/justinyzy/Python_final_project2024/blob/main/App_Sample.png))
