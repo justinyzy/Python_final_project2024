@@ -17,10 +17,11 @@
 
 
 ### Help and Support
-if you need some helps or ask some question.
+If you need some helps in using this Application or ask some question about it,
 
 Please contact me.
 
 Email:justin.yzy@gmail.com
 
 Linkedin:https://www.linkedin.com/in/%E5%AE%97%E5%BD%A5-%E6%B8%B8-ba744b193/
+
