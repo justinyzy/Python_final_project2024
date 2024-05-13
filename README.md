@@ -9,7 +9,7 @@
 1. Download this project on your computer.
    Enter `git clone https://github.com/justinyzy/Python_final_project2024.git` in your VS Code terminal.
 2. requirments: pandas, numpy, shiny, plotly, matplotlib, shinywidgets
-3. using pip install <requirements> in your terminal
+3. using `pip install requirements` in your terminal
 4. Start the shiny app. `shiny run --reload --launch-browser app.py`
 
 ### Sample App UI
