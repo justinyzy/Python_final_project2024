@@ -2,7 +2,7 @@
 
 
 ### Description
-
+This project is designed to offer users an enriching experience by providing thought-provoking quotes from famous philosophers. Users can select a category based on the type of question or problem they are contemplating, and the program will generate a random philosophical quote related to that category.
 
 
 ### Installation Steps
