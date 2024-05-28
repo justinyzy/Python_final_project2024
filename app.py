@@ -6,12 +6,15 @@ import pandas as pd
 
 import plotly.figure_factory as ff
 import random
+import webbrowser
+
+webbrowser.open('http://127.0.0.1:8000')
 
 
 data = pd.read_csv('saying_data.csv')
 
 
-page1 = ui.page_fluid(  
+Home = ui.page_fluid(  
     ui.layout_sidebar(
         ui.panel_sidebar(
             ui.input_select("file_1", "Select file:", {"file1": "saying_data"}),
@@ -78,8 +81,11 @@ def server(input, output, session):
 
 
 app_ui = ui.page_navbar(
-    ui.nav_panel("Page 1", page1),
-    title="Page title"
+    ui.nav_panel("Home", Home),
+    title="Answer Book"
 )
 
 app = App(app_ui, server)
+
+if __name__ == "__main__":
+    app.run()
