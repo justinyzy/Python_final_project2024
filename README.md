@@ -12,6 +12,8 @@ This project is designed to offer users an enriching experience by providing tho
 3. using `pip install requirements` in your terminal (you need to change requirements into those packages mention above)
 4. Start the shiny app. `shiny run --reload --launch-browser app.py`
 
+5. If you open the folder in your VSCode, you can run by clicking the start button. (Final Update in 2024/06/01)
+
 ### Sample App UI
 ![image](https://github.com/justinyzy/Python_final_project2024/blob/main/App_Sample.png)
 
